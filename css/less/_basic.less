@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Rockwell';
+  src: url("/fonts/Rockwell.otf");
+}
+
+@font-face {
+  font-family: 'RockwellBold';
+  src: url("/fonts/Rockwell_MT_Bold.ttf");
+}
+
+body {
+  padding: 30px 15px;
+  font-family: 'Rockwell', "Times New Roman", Serif;
+  color: @color-1;
+  text-align: center;
+  font-size: 16px;
+  @media @screen-600{
+    font-size: 20px;
+
+  }
+}
+
+h1, span {
+  font-size: 2em;
+  font-family: 'RockwellBold', "Times New Roman", Serif;
+}
+
+span {
+  color: @color-2;
+}
+
+input {
+  border: 2px solid @color-1;
+  text-align: center;
+  height: 28px;
+  letter-spacing: 1px;
+}
+
+label {
+  line-height: 1.6;
+}

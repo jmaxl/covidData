@@ -1,0 +1,79 @@
+body,
+p,
+a,
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+@font-face {
+  font-family: 'Rockwell';
+  src: url("/fonts/Rockwell.otf");
+}
+@font-face {
+  font-family: 'RockwellBold';
+  src: url("/fonts/Rockwell_MT_Bold.ttf");
+}
+body {
+  padding: 30px 15px;
+  font-family: 'Rockwell', "Times New Roman", Serif;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+}
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+}
+h1,
+span {
+  font-size: 2em;
+  font-family: 'RockwellBold', "Times New Roman", Serif;
+}
+span {
+  color: #3fa033;
+}
+input {
+  border: 2px solid #000000;
+  text-align: center;
+  height: 28px;
+  letter-spacing: 1px;
+}
+label {
+  line-height: 1.6;
+}
+.postal-code {
+  margin: 16px 0px;
+}
+.postal-code p {
+  font-size: 1.2em;
+}
+.district-list {
+  margin: 16px 0px;
+}
+.district-list p {
+  font-size: 1.2em;
+}
+.district-list > div {
+  text-align: left;
+  width: 250px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 600px) {
+  .district-list > div {
+    width: 300px;
+  }
+}
+.district-list > div div {
+  height: 25px;
+}
+.district-list > div div label input {
+  height: auto;
+  margin-right: 8px;
+}
