@@ -1,25 +1,9 @@
-var postalCodeJson, populationJson;
+var exampleJson;
 
-$.getJSON('postalCode.json', {format: "json"}).done(function (data) {
-    postalCodeJson = data;
+$.getJSON('example.json', {format: "json"}).done(function (data) {
+    exampleJson = data;
 });
 
-$.getJSON('population.json', {format: "json"}).done(function (data) {
-    populationJson = data;
-});
-
-$.getJSON('populationDevelopment.json', {format: "json"}).done(function (data) {
-    populationDevelopmentJson = data;
-});
-
-var populationListKeys = {
-    'ew_ins': 0,
-    'ew_0_18': 9,
-    'ew_18_30': 24,
-    'ew_30_45': 37.5,
-    'ew_45_65': 55,
-    'ew_65+': 72.5
-};
 
 $(document).on('keyup', '.js-postal-code', function () {
     var postalCode = $(this).val();
